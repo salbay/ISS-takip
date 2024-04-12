@@ -63,9 +63,10 @@ def mail_at(baslik,icerik):
                             msg=f"Subject:{baslik}\n\n{icerik}")
 
 
-if (yakinlik_tespiti(round(parameters["lat"],1),round(float(ISS[1]),1),0.5) and
+if karanlik_kontrol==1:
+    print(round(float(ISS[1]),1),round(float(ISS[0]),1))
+    if (yakinlik_tespiti(round(parameters["lat"],1),round(float(ISS[1]),1),0.5) and
     yakinlik_tespiti(round(parameters["lng"],1),round(float(ISS[0]),1),0.5)):
-    if karanlik_kontrol==1:
         mesaj = "Uluslararasi Uzay Istasyonu su an itibariyle Bursa'nin ustunden " \
                 "geciyor. Eger kodumuz dogruysa, hava karanlik ve yukarlarda bir " \
                 "yerde istasyon var. Iyi Seyirler.."
