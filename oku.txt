@@ -1,0 +1,9 @@
+"""
+
+hava karanlıksa (karanlik_kontrol) ve uzay istasyonu Bursa koordinatlarından
+geçiyorsa, mail atılacak.
+
+göndereceğiniz mail adresinizi, ürettiğiniz uygulama şifresini, ve
+gönderilecek mail adresini yazınız.
+
+"""
