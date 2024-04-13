@@ -11,7 +11,7 @@ parameters = {
     "tzid":"Europe/Istanbul"
 }
 
-#---------------- gün doğum ve batış saatlerini api ile çekiyoruz.------------
+#---------------- gün doğum ve batış saatlerini api ile çekiyoruz.-------------
 response = requests.get("https://api.sunrise-sunset.org/json",params=parameters)
 
 sunrise = response.json()["results"]["sunrise"].split("T")[1].split(":")
