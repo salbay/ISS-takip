@@ -62,7 +62,6 @@ def mail_at(baslik,icerik):
         connection.sendmail(from_addr=email, to_addrs="****",
                             msg=f"Subject:{baslik}\n\n{icerik}")
 
-
 if karanlik_kontrol==1:
     print(round(float(ISS[1]),1),round(float(ISS[0]),1))
     if (yakinlik_tespiti(round(parameters["lat"],1),round(float(ISS[1]),1),0.5) and
